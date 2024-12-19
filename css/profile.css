@@ -1,0 +1,300 @@
+.designprofilebody {
+    margin: 0; /* Remove default margin */
+    background-color: #121111;
+}
+
+.profileimg {
+    height: 200px;
+    width: 200px;
+    text-align: start;
+    border-radius: 50%; /* Use 50% for border-radius to make it perfectly round */
+    border: 5px solid rgb(30, 255, 0);
+    box-shadow: 0px 0px 100px rgba(30, 255, 0, 1);
+    display: inline-block;
+    vertical-align: middle; /* Align the image vertically with the text */
+    object-fit: cover; /* This will make the image cover the entire container while maintaining its aspect ratio */
+}
+
+.profileadjust {
+    display: flex;
+    margin-left: -20px;
+    padding-top: 120px;
+    padding-left: 60px;
+    z-index: 1;
+    width: 900%;
+    height: 400px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), black); /* Transparent to black gradient */
+}
+.profileadjust p {
+    margin-left: 20px; /* Add some space between the image and text */
+}
+.profilebody {
+    position: relative; /* Added to create a positioning context for the logout button */
+    padding-left: 20px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: left; /* Center content vertically */
+    text-align: center; /* Center text content */
+    align-items: flex-start; /* Align content to the top */
+}
+.profilecomponent {
+    margin-top: 50px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+.titleprofile {
+    margin-left: 20px;
+    background-color: rgb(36, 36, 36);
+    padding: 1px;
+    text-align: center;
+    border-radius: 20px;
+}
+.titleprofile:hover {
+    color: rgb(30, 255, 0);
+    box-shadow: 0px 0px 30px rgba(30, 255, 0, 1)
+}
+.mainprofile {
+    max-width: 70%;
+    background-color: rgb(0, 0, 0);
+    margin: auto; /* Center the mainprofile horizontally */
+    height: 100%; /* Occupy full height of the parent */
+}
+
+
+.imgbg {
+   margin-left: -20px;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    border-bottom: 2px solid rgb(30, 255, 0);
+}
+.imgbg1 {
+    width: 100%;
+    margin-top: 50px;
+}
+.member {
+    padding-left: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1; /* Take up available space */
+}
+.memberlast {
+    padding-left: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom:2%;
+}
+.join{
+    background-color: rgb(30, 255, 0);
+    padding: 10px;
+    width: 100px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    border: 1px solid rgb(30, 255, 0);
+}
+
+.join:hover{
+    background-color: rgba(66, 255, 41, 0.8); /* Fixed the use of rgba for opacity */
+    box-shadow: 0px 0px 30px rgba(30, 255, 0, 1);
+}
+.icon{
+    color: rgb(30, 255, 0);
+    font-size: 40px;
+    margin-right: 20px;
+}
+.icon1{
+    color: rgb(30, 255, 0);
+    font-size: 20px;
+    margin-right: 20px;
+}
+.membership{
+    display: flex; 
+    align-items: center;
+}
+.membership p{
+    margin-left: 5px;
+}
+.samesame {
+    display: flex;
+    justify-content: space-between; /* Add space between the elements */
+    margin-top: 20px; /* Add margin to the top */
+}
+.line{
+    display: flex;
+}
+.bannerprofile {
+    bottom: 0;
+    margin: auto; /* Center horizontally */
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.ontop {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 300px;
+    position: absolute;
+    top: 35%; /* Adjust the top position as needed */
+    left: 23%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 1;
+}
+.profilejoin{
+    color: rgb(30, 255, 0);
+    text-decoration: none;
+}
+.joinbutton{
+    margin-right:2%;
+    margin-top:2%;
+}
+.joinbutton a{
+    text-decoration:none;
+    color:black;
+}
+
+.ordercart-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-left:50px;
+    margin-right:50px;
+    padding: 20px;
+    padding-left:50px;
+    padding-right:50px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.ordercarttot {
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.ordercart-card img {
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.ordercart-card-content {
+    flex-grow: 1;
+}
+
+.status-box {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid black;
+    background-color: black; /* Green */
+    color: white;
+}
+
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #32CD32; /* Green */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.ship-box {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right:20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.ship-box::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #32CD32; /* Green */
+    animation: pulse 1.5s ease-out infinite; /* Pulsating animation */
+    top: 20%;
+    left: -10px;
+    transform: translateY(-50%);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+.ordercart-card-content-tracking {
+    margin-top: 10px; /* Adjust this value as needed */
+}
+.delivered-box {
+    background-color: #32CD32; /* Green */
+    border-color: #32CD32; /* Green */
+}
+
+.delivered-box .loading-spinner {
+    display: none; /* Hide the loading spinner */
+}
+.order {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+.delivered {
+    background-color: green;
+    color: white;
+}
+.logoutbutton {
+    position: absolute; /* Fixed typo: "obsulute" to "absolute" */
+    color: black;
+    background-color: rgb(30, 255, 0);
+    border:none;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    top: 10px; /* Adjusted to position within the profilebody */
+    right: 10px; /* Adjusted to position within the profilebody */
+    z-index: 2;
+}
+.logoutbutton:hover{
+    background-color: rgba(3, 252, 128); /* Fixed the use of rgba for opacity */
+    box-shadow: 0px 0px 30px rgba(3, 252, 223, 4);
+}

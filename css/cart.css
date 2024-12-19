@@ -1,0 +1,107 @@
+.bodycartcart{
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+.cartbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20%;
+    margin-top:2%;
+}
+.cartcomponent {
+    max-width: 70%;
+    width: 70%;
+    background-color: #fff;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.cartcomponent h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.cart-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.carttot {
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.cartt {
+    margin-top: -20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.cart-card img {
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.cart-card-content {
+    flex-grow: 1;
+}
+.quantity-cart {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+.quantity-cart p {
+    margin-right: 10px;
+}
+
+.quantitycart-button {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: rgba(30, 255, 0);
+    color: #000;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+.quantitycart-button:hover {
+    background-color: rgb(24, 202, 0);
+}
+.cart-price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+}
+.pricetot {
+    display: flex;
+    margin-left: auto; /* Add this line */
+}
+.submittot {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(30, 255, 0);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.submittot:hover {
+    background-color: rgb(22, 189, 0);
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../../css/adminheader.css"> 
+</head>
+<body>
+
+<header class="adminheader">
+    <div id="burger-menu" onclick="toggleSidebar()">
+        <div class="burger"></div>
+        <div class="burger"></div>
+        <div class="burger"></div>
+    </div>
+    <div class="admincomponent">
+        
+        <div class="padadmin">Welcome, ADMIN</div>
+        <img src="img/adminlogo.png" alt="Admin Logo" class="adminadmin">
+    </div>
+</header>
+
+<!-- Sidebar -->
+<div id="mySidebar" class="sidebar">
+    <img src="img/logoprojectNAME-01.png" alt="Logo" class="adminlogo">
+    <hr class="hradmin">
+    <a href="#">Customers</a>
+    <hr class="hradmin">
+    <a href="add_product.php">Products</a>
+    <hr class="hradmin">
+    <a href="#">Orders</a>
+    <hr class="hradmin">
+    <div class="logoutadmin"><a href="#">Logout</a></div>
+</div>
+
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById("mySidebar");
+        if (sidebar.style.width === "250px") {
+            sidebar.style.width = "0";
+            document.removeEventListener('click', closeSidebarOnClickOutside);
+        } else {
+            sidebar.style.width = "250px";
+            document.addEventListener('click', closeSidebarOnClickOutside);
+        }
+    }
+
+    function closeSidebarOnClickOutside(event) {
+        var sidebar = document.getElementById("mySidebar");
+        var burgerMenu = document.getElementById("burger-menu");
+        if (!sidebar.contains(event.target) && !burgerMenu.contains(event.target)) {
+            sidebar.style.width = "0";
+            document.removeEventListener('click', closeSidebarOnClickOutside);
+        }
+    }
+</script>
+
+</body>
+</html>

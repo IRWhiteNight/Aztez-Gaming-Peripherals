@@ -1,0 +1,131 @@
+.bodybg {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+.paymentbody {
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between; /* Ensure items are spaced out */
+    max-width: 70%;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.leftside {
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    width: 48%;
+    border-radius: 10px 0 0 10px;
+}
+.rightside {
+    background-color: #cfcfcf;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 48%;
+    border-radius: 0 10px 10px 0;
+}
+.detail1 {
+    padding-bottom: 2%;
+}
+.marginaccount1 {
+    padding-bottom: 2%;
+    font-weight: bold;
+}
+.detail2 {
+    padding-top: 2%;
+    margin-bottom:5%;
+}
+.paymentform {
+    display: flex;
+    flex-direction: column;
+}
+.paymentform input, .paymentform select {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.paymentform input:focus, .paymentform select:focus {
+    outline: none;
+}
+.paymentform label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+.statestyle {
+    width: 200px;
+}
+.addressdetail {
+    display: flex;
+    justify-content: space-between;
+}
+.addressdetail2 {
+    display: flex;
+    justify-content: space-between;
+}
+.addressdetail  input {
+    flex: 1;
+    margin-right: 10px;
+}
+.addressdetail2  input {
+    flex: 1;
+    width: 10px;
+}
+.addressdetail input:last-child {
+    margin-right: 0;
+}
+.submitpayment {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(30, 255, 0);
+}
+form input::placeholder, form select option[disabled] {
+    color: #000000;
+}
+.paymentimg{
+    width: 20%;
+    border-radius: 20px;
+}
+.imgstyle{
+    display: flex;
+    margin-top:10px;
+}
+.textrightimg{
+    padding-left:20px ;
+
+}
+.textrightprice{
+    padding-left: 60px;
+    padding-top: 35px;
+}
+.pricetotalstyle{
+    display: flex;
+    max-width: 100%;
+}
+.totalleftprice{
+    width: 80%;
+}
+.boldprice{
+    font-weight: bold;
+    font-size: 16px;
+}
+.relativedesign{
+    justify-content:center;
+}

@@ -1,0 +1,120 @@
+/* store.css */
+.bodystore {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    min-height: 100vh; /* Use min-height instead of height */
+    margin: 0; /* Remove default margin */
+    background-color: rgb(255, 255, 255);
+}
+
+.storebody {
+    max-width: 70%;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    flex-direction: column;
+}
+
+.storeh1 {
+    padding: 10px;
+}
+
+.componentstore {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.filter {
+    max-width: 20%;
+    width: 20%;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.filter h3 {
+    margin: 0;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add gap between the cards */
+    margin: 20px;
+}
+
+.card-store {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 20px); /* Adjust width */
+    height: 350px; /* Adjust height */
+    margin: 10px; /* Adjust margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(155, 155, 155, 0.5); /* Add box shadow */
+}
+
+.dropdown li {
+    list-style: none;
+    margin-left: -45px;
+}
+
+.price {
+    margin-top: 10px;
+    display: flex;
+}
+
+.priceinput {
+    font-size: 18px;
+    margin-left: 5px;
+    height: 30px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+}
+
+.marginp {
+    margin-top: 10px;
+}
+
+.card-store img {
+    padding-top: 10px;
+    height: 150px;
+}
+
+button {
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(30, 255, 0);
+    margin-bottom: 0px;
+}
+
+button:hover {
+    background-color: rgb(20, 170, 0);
+}
+
+.cardp {
+    margin-top: -10px;
+    margin: 5px 0; /* Adjust paragraph margin */
+}
+
+input[type='checkbox'] {
+    accent-color: rgb(30, 255, 0);
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.designmid {
+    display: flex;
+    justify-content: center;
+}

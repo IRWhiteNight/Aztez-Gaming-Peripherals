@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.receipt-section {
+    flex-basis: 48%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.account-details, .delivery-details {
+    width: 100%;
+}
+
+.account-details h2, .delivery-details h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.total-section {
+    text-align: right;
+    margin-top: 20px;
+    border-top: 2px solid #333;
+    padding-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    .details-container {
+        flex-direction: column;
+    }
+
+    .receipt-section {
+        flex-basis: 100%;
+    }
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+    }
+
+    .container {
+        box-shadow: none;
+        max-width: 100%;
+        width: 95%;
+        padding: 20px;
+        padding-right: 20px;
+        margin: 0;
+    }
+
+    .receipt-section {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px dashed #ddd;
+    }
+
+    .total-section {
+        margin-top: 10px;
+        border-top: 1px dashed #ddd;
+        padding-top: 10px;
+    }
+}
+.print-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(30, 255, 0);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.print-button:hover {
+    background-color: #46d100;
+}
+.print-button:focus {
+    outline: none;
+}
+.item-img {
+    max-width: 50px; /* Adjust as needed */
+    max-height: 50px; /* Adjust as needed */
+    vertical-align: middle;
+}
+.right-align {
+    text-align: right;
+}

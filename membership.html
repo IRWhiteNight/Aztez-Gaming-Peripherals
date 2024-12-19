@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */  
+            background-color: rgb(3, 3, 3);
+        }
+        .mainmembership {
+            max-width: 70%;
+            background-color: rgb(0, 0, 0);
+            margin: auto; /* Center the mainprofile horizontally */
+            height: 1000px; /* Occupy full height of the parent */
+        }
+
+        .imgmembership {
+            width: 100%;
+            margin-top: 50px;
+        }
+        .bannermembership {
+            bottom: 0;
+            margin: auto; /* Center horizontally */
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: relative;
+        }
+        .ontopmembership {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            width: 300px;
+            position: absolute;
+            top: 35%; /* Adjust the top position as needed */
+            left: 23%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            z-index: 1;
+        }
+        .membershipjoin{
+            color: rgb(30, 255, 0);
+            text-decoration: none;
+        }
+        .card {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #1d1d1d;
+        border: 2px solid;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        overflow: hidden;
+        max-width: 300px;
+        text-align: center;
+        margin: 20px;
+        
+    }
+
+    .card.gold {
+        animation: burnGold 0.5s linear infinite alternate;
+    }
+
+    .card.bronze {
+        animation: burnBronze 2s linear infinite alternate;
+    }
+    .card.silver {
+        animation: burnSilver 3s linear infinite alternate;
+    }
+
+    .card-img {
+        padding-top: 20px;
+        width: 50%;
+        height: auto;
+    }
+
+    .card-content {
+        padding: 16px;
+    }
+
+    .card-title {
+        color: white;
+        font-size: 1.5em;
+        margin: 0 0 10px;
+    }
+
+    .card-description {
+        font-size: 1em;
+        color: #ffffff;
+        margin: 0 0 20px;
+    }
+
+    .card-btn {
+        display: inline-block;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px 20px;
+        color: #000000;
+        background-color: rgb(30, 255, 0);
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    .card-btn:hover {
+        background-color: rgb(19, 165, 0);
+    }
+
+    .cardline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes burnSilver {
+    0%, 100% {
+        border-color: #C0C0C0; /* Silver color */
+        box-shadow: 
+            0 0 5px #C0C0C0, 
+            0 0 10px #A0A0A0, 
+            0 0 15px #909090, 
+            0 0 20px #808080, 
+            0 0 25px #707070, 
+            0 0 30px #606060, 
+            0 0 35px #505050;
+    }
+    50% {
+        border-color: #A0A0A0; /* Slightly darker silver */
+        box-shadow: 
+            0 0 2px #C0C0C0, 
+            0 0 5px #A0A0A0, 
+            0 0 10px #909090, 
+            0 0 15px #808080, 
+            0 0 20px #707070, 
+            0 0 25px #606060, 
+            0 0 30px #505050;
+    }
+}
+
+@keyframes burnGold {
+    0%, 100% {
+        border-color: #FFD700;
+        box-shadow: 
+            0 0 20px #FFD700, 
+            0 0 30px #FFC700, 
+            0 0 40px #FFB700, 
+            0 0 50px #FFA700, 
+            0 0 60px #FF9700, 
+            0 0 70px #FF8700, 
+            0 0 80px #FF7700;
+    }
+    50% {
+        border-color: #FFC700;
+        box-shadow: 
+            0 0 10px #FFD700, 
+            0 0 20px #FFC700, 
+            0 0 30px #FFB700, 
+            0 0 40px #FFA700, 
+            0 0 50px #FF9700, 
+            0 0 60px #FF8700, 
+            0 0 70px #FF7700;
+    }
+}
+
+@keyframes burnBronze {
+    0%, 100% {
+        border-color: #CD7F32;
+        box-shadow: 
+            0 0 10px #CD7F32, 
+            0 0 20px #CD6F32, 
+            0 0 30px #CD5F32, 
+            0 0 40px #CD4F32, 
+            0 0 50px #CD3F32, 
+            0 0 60px #CD2F32, 
+            0 0 70px #CD1F32;
+    }
+    50% {
+        border-color: #CD6F32;
+        box-shadow: 
+            0 0 5px #CD7F32, 
+            0 0 10px #CD6F32, 
+            0 0 15px #CD5F32, 
+            0 0 20px #CD4F32, 
+            0 0 25px #CD3F32, 
+            0 0 30px #CD2F32, 
+            0 0 35px #CD1F32;
+    }
+}
+
+    .membership{
+        margin-bottom: 100px;
+    }
+    .mainmembership {
+            max-width: 70%;
+            background-color: rgb(0, 0, 0);
+            margin: auto; /* Center the mainprofile horizontally */
+            height: 1000px; /* Occupy full height of the parent */
+        }
+    .membershipbody{
+        padding: 20px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 50px;
+    }
+    .greentext{
+        color:rgb(30, 255, 0);
+    }
+    .payment{
+        margin-top: 100px;
+        background-color: #141414;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+        padding-top: 10px;
+        color: white;
+    }
+    .widthheight{
+        width: 310px;
+        height: 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 2px solid white;
+    }
+    .margin0{
+        margin-left: -10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="mainmembership">
+
+        <div class="membershipbody">
+            <h1 class="greentext">Membership</h1>
+            <p>"Unlock Exclusive Benefits Today!"</p>
+
+            <p>By becoming our member you have unlock a legendary benefits to enhace your gaming experience</p>
+        <hr>
+        </div>
+
+        <div class="cardline">
+            <div class="card gold">
+                <img src="img/gold-01.png" alt="Card Image" class="card-img">
+                <div class="card-content">
+                    <h2 class="card-title greentext">Gold</h2>
+                    <p class="card-description">20% Discount on All Items</p>
+                    <p class="card-description">MYR 200</p>
+                    <a href="#" class="card-btn">Purchase</a>
+                </div>
+            </div>
+            <div class="card bronze">
+                <img src="img/bronze-01.png" alt="Card Image" class="card-img">
+                <div class="card-content">
+                    <h2 class="card-title greentext">Bronze</h2>
+                    <p class="card-description">15% Discount on All Items</p>
+                    <p class="card-description">MYR 150</p>
+                    <a href="#" class="card-btn">Purchase</a>
+                </div>
+            </div>
+            <div class="card silver">
+                <img src="img/silver-01.png" alt="Card Image" class="card-img">
+                <div class="card-content">
+                    <h2 class="card-title greentext">Silver</h2>
+                    <p class="card-description">10% Discount on All Items</p>
+                    <p class="card-description">MYR 100</p>
+                    <a href="#" class="card-btn">Purchase</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment">
+            <h1 class="greentext">Payment method</h1>
+            <form action="post">
+                <h3>Debit Card / Credit Card</h3>
+                First Name
+                <input type="text" placeholder="First name on card" class="widthheight">
+                Last name
+                <input type="text" placeholder="Last name on card" class="widthheight">
+                <br><br><br><br>Credit card details:<br><br>
+                <input type="number" placeholder="Card number" class="widthheight">
+                
+                <input type="number" placeholder="MM" class="margin0 widthheight">
+                
+                <input type="number" placeholder="YYYY" class="margin0 widthheight">
+                
+                <input type="number" placeholder="CVV" class="margin0 widthheight">
+                <br><br><br><br>
+                <br><input type="submit" value="Submit" class="card-btn">
+            </form>
+        </div>
+
+    <div class="bannermembership">
+        <img src="img/bannerprofile-01-01-01-01.png" class="imgmembership">
+        <div class="ontopmembership">
+            <h1>JOIN OUR ARMY</h1>
+            <p>Get get up to 50% for member</p>
+            <p>*For member only</p>
+            <a href="#" class="membershipjoin">Join</a>
+        </div>
+    </div>
+</body>
+</html>
